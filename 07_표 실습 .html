@@ -1,9 +1,32 @@
+<!--
+    코드에서 스타일을 입힐 때 
+    각각의 코드 안에 style을 작성해주는것보다 
+    <head>아래에 <style>이라는 태그를 만들어서 
+        내가 한번에 꾸미고자하는 태그이름과 꾸밀 내용을 
+        {} 안에 작성해주는것이 더 강력하게 작용함
+
+        변경하고자하는 스타일이 여러개라면 
+        위와같이 작성해서 한번에 변경하기 
+
+-->
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <title>음식 가게 </title>
         <meta charset="UTF-8">
 </head>
+<style>
+    th,td{
+        background-color: coral;
+    }
+</style>
 
 <body>
   <!--text-align: center; 글자 중앙으로 옮기기-->
@@ -36,6 +59,31 @@
 
 </table>
 </table>
+<h1>게시물 목록</h1>
+<table border= "1"  style = "width: 100%; text-align: center; border-collapse: collapse" >
+<tr style="background-color: aquamarine;">
+    <td>게시물 제목</td>
+    <td>작성자</td>
+    <td>작성일</td>
+    <td>내용</td>
+</tr>
+<tr>
+    <td>게시물제목1</td>
+    <td>사용자1</td>
+    <td>2024-05-07</td>
+    <td>이 게시물이 첫번쨰입니다</td>
+</tr>
+<tr>
+    <td>게시물제목2</td>
+    <td>사용자2</td>
+    <td>2024-05-06</td>
+    <td>이 게시물이 두번쨰입니다</td>
+</tr>
+
+</table>
+
+
+
 </body>
 
 
