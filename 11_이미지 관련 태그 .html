@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!--화면에 보이지는 않지만 사이트의 정보를 담는공간 meta title style-->
+    <meta charset="UTF-8" />
+    <title>이미지 관련 태그</title>
+  </head>
+  <body>
+    <h1>이미지 태그 img</h1>
+    <pre>
+    -웹 문서의 사진이나 그림같은 이미지를 삽입하는 용도의 태그 
+
+    [속성] 
+    1.src : 삽입할 이미지의 경로를 작성하는 속성 
+    (파일위치,인터넷 주소 = 이미지를 가져올수 있는 경로 )
+    2. width : 가로 길이를 지정해주는 속성 (필수x)
+    3.height : 세로 길이를 지정해주는 속성 (필수x)
+    4.alt : 이미지 설명을 작성하는 속성 
+            이미지가 보이지않을때 화면에 출력되는 그림
+
+
+</pre
+    >
+    <!-- 
+    http로 시작하지않는 이미지는 주소를 가져올 수 없음 
+    http로시작하는 이미지는 볼수있음 
+
+    이미지 크기를 조정할 때
+    width 가로길이를 설정해주는데 보통 px나 %를 많이사용
+    height 가로길이를 설정해주는데 보통 px나 %를 많이사용
+
+-->
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTbSkF1bv74fPgYWaIoaBwiNeonu0Yx8YO9w&s"
+      alt="이미지깨짐"
+    />
+    <br />
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE_z7YI_fn1eavbcyG42iUJkdcON0ItABeEGC8qWx1HA&s"
+      width="200px"
+      height="200px"
+    />
+
+    <!--구글에서 이미지 퍼와서 이미지 사이즈 500,500 px-->
+    <img
+      src="https://mblogthumb-phinf.pstatic.net/MjAyMDEwMjNfMTM2/MDAxNjAzMzgzNDY2MDgy.4HF-jMTtVukYNeF0mm-Ug7JICBvDH1PENw29jwgP8QAg.b35IOs0dle4Kv4ePoHIplR51m4KOgcyTOIqL8BvVW2Qg.GIF.ckzkslkkk/IMG_4646.GIF?type=w800"
+      width="height = 500px width = 500px"
+    />
+    <h2>이미지 절대 경로로 출력하기</h2>
+    <pre>
+절대 경로 : 변하지않는 기준점으로 부터 목표까지의 경로
+
+원도우 기준으로 c, d 드라이브가 기준점이 됨
+</pre
+    >
+    <!--이미지를 절대 경로로 가지고올때 프리뷰에서는 이미지가 제대로 안보일수도있음
+    이미지 경로를 복사한후 붙여넣을때 경로에 \를 /로 바꿔주기
+-->
+    <img
+      src="C:/Users/user1/Prontend-workspace/html/이미지들/swimmingPartyMarley.jpg"
+    />
+
+    <hr />
+    <img src="C:/Users/user1/Prontend-workspace/html/이미지들" />
+
+    <h2>상대 경로로 이미지 출력하기</h2>
+
+    <pre>
+    상대경로 : 현재파일 / 페이지 위치를 기준으로하여 
+    목표까지의 경로를 나타낸것 
+</pre
+    >
+    <img src="이미지들/hogam.jpg" width="300px" height="300px" />
+
+<hr>
+<h2>고정 크기 단위(px) : 항상 고정된 크기를 가짐</h2>
+
+<img src="이미지들/swimmingPartyMarley.jpg" width="300px" height="300px"/>
+
+<hr>
+
+<img src ="C:\Users\user1\Prontend-workspace\html\이미지들\pajamaMarley.jpg"width ="500px" height="500px"/>
+
+<img src="이미지들/lovelyMarley.jpg" width="400px" height="300px"/>
+
+
+  </body>
+</html>
