@@ -3,24 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <title>한식 주문하기</title>
+        <link rel="stylesheet" href="스타일.css">
         <style>
-            body{
-                background-color: #f9f9f9;
-            }
-            .컨테이너 {
-                width: 60%;
-                background-color: white;
-                padding: 20px ;
-                margin: 20px auto; /*auto 경우 가운데 정렬과 같은 나열을 사용할 때 쓰임*/
-                border-radius: 10px;
-                box-shadow: 0 0 10px #d7d7d7;
-                text-align: center;
-            }
-
-            h1, button {
-                text-align: center;
-            }
             button {
+                text-align: center;
                 width: 200px;
                 background-color: #555;
                 color: white;
@@ -28,52 +14,46 @@
                 border-radius: 5px;
                 padding: 10px 20px;
             }
-            .메인이미지 {
-                width: 200px;
-                height: 200px;
-                margin: 20px;
-            }
-            .옵션이미지 {
-                width: 100px;
-                height: 100px;
-            }
-            .메인꾸미기{
-                display: flex;
-                text-align: center;
-                margin: 20px auto;
-                
-            }
         </style>
     </head>
     <body>
-        <div class="컨테이너">
+        <div class="헤더">
+            <h1>KH 배달 서비스</h1>
+        </div>
+        <div class="네비게이션">
+            <ul>
+                <li><a href="홈페이지.html">홈</a></li>
+                <li><a href="#">주문하기</a></li>
+            </ul>
+        </div>
+        <div class="메인-주문하기">
             <h1>한식 주문하기</h1>
             <form>
                 <div class="메인꾸미기">
                     <label>메뉴선택 : </label>
                     <div>
-                        <img class="메인이미지" src="../이미지들/된장찌개.PNG">
+                        <img class="메인이미지" src="음식이미지/된장찌개.PNG"
                         <br>
                         <input type="radio">된장찌개
                     </div>
                     <div>
-                        <img class="메인이미지" src="../이미지들/비빔밥.PNG">
+                        <img class="메인이미지" src="음식이미지/이미지들/">
                         <br>
                         <input type="radio">비빔밥
                     </div>
                     <div>
-                        <img class="메인이미지" src="../이미지들/불고기.PNG">
+                        <img class="메인이미지" src="음식이미지/불고기.PNG">
                         <br>
                         <input type="radio">불고기
                     </div>
                 </div>
                 <div>
                     <label>추가옵션:</label>
-                    <img class="옵션이미지" src="../이미지들/계란.png">
+                    <img class="옵션이미지" src="음식이미지/계란.png">
                     <input type="checkbox">계란
-                    <img class="옵션이미지" src="../이미지들/두부.png">
+                    <img class="옵션이미지" src="음식이미지/두부.png">
                     <input type="checkbox">두부
-                    <img class="옵션이미지" src="../이미지들/김치.png">
+                    <img class="옵션이미지" src="음식이미지/김치.png">
                     <input type="checkbox">김치
                 </div>
                 <div>
@@ -91,6 +71,9 @@
                 </div>
                 <button>주문하기</button>
             </form>
+        </div>
+        <div class="푸터">
+            &copy; 2024 배달 서비스. All right reserved.
         </div>
     </body>
 </html>
