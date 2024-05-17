@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <style>
+            body{
+                background-color: aquamarine; !important;
+            }
+        </style>
+    </head>
+<body>
+<h1>CSS 선택자 우선순위</h1>
+<pre>
+    기본적으로 css속성은 style 태그 또는 css파일에 
+    작성된 순서대로 해석되지만 
+
+    같은 요소에 따라 여러 css속성이 설정되는경우 우선순위가 결정됨
+
+    1:동일한 우선순위로 css속성이 설정된 경우 
+    제일 마지막에 작성된 css속성이 반영됨
+    2: 여러 선택자를 이용해서 같은 요소를 선택하더라도 
+    지정되는 css속성이 다르면 모두 반영 
+
+    1순위: css속성중 속성값  !important; 
+    background-color green !important;
+    2순위: 태그옆에 작성된 style 
+    <p style="color: red;"></p>
+    3순위: 아이디 선택자 #아이디 속성명 
+    4순위: 클래스 선택자 .class 속성명 
+    5순위: 기본태그선택자 태그 속성명 
+
+
+
+
+</pre>
+
+
+
+</body>
+
+
+
+</html>
